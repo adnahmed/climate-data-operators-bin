@@ -1,0 +1,25 @@
+{
+  "name": "climate-data-operators-bin",
+  "version": "0.1.0",
+  "description": "Binary files for climate-data-operators",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nbald/climate-data-operators-bin.git"
+  },
+  "author": "Nicolas Baldeck",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nbald/climate-data-operators-bin/issues"
+  },
+  "homepage": "https://github.com/nbald/climate-data-operators-bin#readme",
+  "dependencies": {
+    "eccodes-lib": "^0.1.0"
+  }
+}

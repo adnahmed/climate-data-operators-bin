@@ -1,0 +1,23 @@
+apt install m4
+
+wget ftp://ftp.unidata.ucar.edu/pub/netcdf/netcdf-c-4.6.2.tar.gz
+tar xvfz netcdf-c-4.6.2.tar.gz
+cd netcdf-c-4.6.2
+./configure --prefix=/root/cdo-dist --disable-dap --disable-netcdf-4
+make
+make check
+make install
+
+
+wget https://confluence.ecmwf.int/download/attachments/45757960/eccodes-2.10.0-Source.tar.gz
+tar xvfz eccodes-2.10.0-Source.tar.gz
+mkdir build
+cd build
+cmake ../eccodes-2.10.0-Source/ -DCMAKE_INSTALL_PREFIX=/root/cdo-dist -DENABLE_NETCDF=OFF
+make ctest
+make install
+
+wget https://code.mpimet.mpg.de/attachments/download/18264/cdo-1.9.5.tar.gz
+tar xvfz cdo-1.9.5.tar.gz
+cd cdo-1.9.5
+./configure --prefix=/root/cdo-dist --with-eccodes=/root/cdo-dist --with-netcdf=/root/cdo-dist
