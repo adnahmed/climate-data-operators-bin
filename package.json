@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/nbald/climate-data-operators-bin#readme",
   "dependencies": {
-    "eccodes-lib": "^0.1.0"
+    "eccodes-lib": "^0.1.1"
   }
 }
